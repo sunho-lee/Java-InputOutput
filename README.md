@@ -18,5 +18,8 @@ BufferedInputStream을 구현한 readFileWithBufferedStream과 InputStream만 �
 Mac m1에서 테스트함.
 
 ## 결과
-readFileWithInputStream 메소드는 9,301ms 정도 소요되었고 readFileWithBufferedStream 메소드는 198ms 소요됨.
-30mb 정도의 데이터는 큰 차이가 발생하였고    
+![buffered-vs-inputstream](https://github.com/sunho-lee/Java-InputOutput/assets/27765412/217f9001-8c91-4c79-a175-f4fa37548530)
+
+readFileWithInputStream 메소드는 9,301ms가 소요되었고 readFileWithBufferedStream 메소드는 198ms가 소요됨.
+
+30mb 정도의 데이터는 큰 차이가 발생하였고 30kb정도의 데이터에서는 유의미한 차이는 없는 것으로 보인다.
